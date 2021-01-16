@@ -3,7 +3,7 @@
 #Get infos about messaging tracking log settings
 Get-TransportService ex01 | Format-List *tracking*
 
-#We cloud can configure Exchange organization to send copies of NDRs to the Exchange recipient. Is there a dedicated mailbox for the Exchange recipient?
+#We coud configure the Exchange organization to send copies of NDRs to the Exchange recipient. Is there a dedicated mailbox for the Exchange recipient?
 Get-OrganizationConfig | Select-Object MicrosoftExchangeRecipientReplyRecipient
 
 #To do so, this example assigns the existing mailbox named "Contoso System Mailbox" to the Exchange recipient
