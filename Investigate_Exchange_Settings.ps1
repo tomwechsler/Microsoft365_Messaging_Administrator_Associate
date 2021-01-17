@@ -43,3 +43,6 @@ $Perms | ForEach-Object {Get-ManagementRoleAssignment -Role $_.Name -Delegating 
 
 #Need help?
 Get-Help Set-CASMailbox -Full
+
+#Details about a received message
+Get-MessageTraceDetail -MessageTraceId fa111196-fd22-429f-1616-08d8b8948ac5 -RecipientAddress admin365@wechsler2020.onmicrosoft.com
